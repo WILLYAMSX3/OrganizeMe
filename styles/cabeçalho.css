@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+#cabecalho{
+    font-family: "Montaga", serif;
+    background-color:  #26a5e0;
+    font-style: italic;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+    border-radius: 5px;
+}
+
+#cabecalho h1{
+    padding: 7px;
+}
+
+.container_lado_esquerdo{
+    display: flex;
+    align-items: center;
+}
+
+.container_lado_esquerdo img{
+    margin-left: 20px;
+    width: 9%;
+}
+
+.container_lado_direito{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.img_usuario{
+    width: 7%;
+    margin-right: 30px;
+}
+
+.img_menu{
+    width: 5%;
+}

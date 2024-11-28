@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#main{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 70px; */
+}
+
+.div_inicio{
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    padding: 20px   ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    box-shadow: 0 0 15px;
+}
+
+.div_inicio p{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+}
+
+.div_inicio_filho{
+    display: flex;
+    flex-direction: column;
+    gap: 10px ;
+    margin-bottom: -10px;
+}
+
+.div_inicio_filho img{
+    margin: 0 auto;
+    justify-content: center;
+    width: 80%;
+}
+
+#exibir_buttons{
+    margin: 0 auto;
+    background-color: #26a5e0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 20%;
+    height: 25%;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8;
+    
+}
+
+#exibir_buttons:hover{
+    opacity: 1;
+    box-shadow: 8px 5px 5px;
+}
+
+.container_lista{
+    margin-top: 30px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    gap: 40px;
+    box-shadow: 0 0 15px;
+    display: none;
+    }
+
+.lado_esquerdo{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    max-height: 150px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.lado_esquerdo input{
+    display: none;
+    border-radius: 7px;
+    border: none  ;
+    width: 400px;
+    height: 35px;
+    font-size: 1.3rem;
+    outline: none;
+    padding-left: 5px;
+}
+
+.lado_esquerdo_filho{
+    border: 3px solid red;
+}
+
+
+.div_buttons{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.div_buttons button{
+    display: none;
+    border-radius: 7px;
+    width: 100px;
+    height: 38px;
+    opacity: 0.7;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    transition: 0.5s;
+}
+
+.div_buttons button:hover{
+    opacity: 1;
+    box-shadow: 8px 5px 5px;
+}
+
+.button_inserir{
+    background-color: rgb(38, 185, 1);
+    cursor: pointer;
+}
+
+.button_remove{
+    background-color: rgb(255, 106, 6);
+    cursor: pointer;
+}
+
+.button_remove_todos{
+    background-color: rgb(206, 2, 2);
+    cursor: pointer;
+}
+
+.lado_direito{
+    display: none;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    max-width: 1200px;
+    padding-top: 10px;
+}
+
+.div_li{
+    margin-left: 90%;
+    width: 10%;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    background-color: none  ;
+ 
+}
+
+.li1{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: 400;
+    box-shadow:  3px 4px 20px rgb(2, 70, 134);
+    background-color: #26a5e0;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.li2{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: 400;
+    box-shadow: 0 0 15px rgb(0, 134, 0);
+    background-color: rgb(93, 221, 8);
+    border-radius: 5px;
+    transition: 1s;
+    animation: lista 1s;
+}
+
+@keyframes lista{
+    0%{
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+    }50%{
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+    }100%{
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+    }
+}
+
+.li3{
+    background-color: none;
+}
+
+
+.buttons_li{
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.button_delete{
+    width: 30px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+}
